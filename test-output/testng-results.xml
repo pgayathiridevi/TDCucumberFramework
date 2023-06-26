@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-26T19:07:45Z" name="Default suite" finished-at="2023-06-26T19:07:48Z" duration-ms="2495">
+  <suite started-at="2023-06-26T20:06:19Z" name="Default suite" finished-at="2023-06-26T20:06:31Z" duration-ms="12461">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@528c868]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-26T19:07:45Z" name="Default test" finished-at="2023-06-26T19:07:48Z" duration-ms="2495">
+    <test started-at="2023-06-26T20:06:19Z" name="Default test" finished-at="2023-06-26T20:06:31Z" duration-ms="12461">
       <class name="td.Runner.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@528c868]" started-at="2023-06-26T19:07:45Z" name="setUpClass" finished-at="2023-06-26T19:07:46Z" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:19Z" name="setUpClass" finished-at="2023-06-26T20:06:19Z" duration-ms="547" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@30c4e352]]>
+                <![CDATA[org.testng.TestRunner@528c8c1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@528c868]" started-at="2023-06-26T19:07:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T19:07:48Z" duration-ms="2168" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:19Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T20:06:30Z" duration-ms="10825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,36 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
-            <message>
-              <![CDATA[Unable to establish websocket connection to http://localhost:52302/devtools/browser/5d34b923-1269-4386-a7a0-df9a4e4e1ac0
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LAPTOP-IHMLS1RS', ip: '192.168.2.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:52302/devtools/browser/5d34b923-1269-4386-a7a0-df9a4e4e1ac0
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LAPTOP-IHMLS1RS', ip: '192.168.2.19', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:106)
-at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
-at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-at java.base/java.util.Optional.map(Optional.java:260)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at td.StepDefinitions.HomeSteps.user_on_homepage(HomeSteps.java:18)
-at ✽.User is on Home Page(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/main/java/td/Features/tdhome.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@528c868]" started-at="2023-06-26T19:07:48Z" name="tearDownClass" finished-at="2023-06-26T19:07:48Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:30Z" name="tearDownClass" finished-at="2023-06-26T20:06:31Z" duration-ms="1078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

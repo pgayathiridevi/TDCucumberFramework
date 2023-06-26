@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HomeSteps {
-	WebDriver driver;
+	public WebDriver driver;
 	
 	@Given("^User is on Home Page$")
 	public void user_on_homepage() {
@@ -25,11 +25,33 @@ public class HomeSteps {
 		driver.findElement(By.xpath("//input[@name='question']")).sendKeys("auto insurance policy");
 		
 	}
+	@Then("^User closes the adchoices$")
+	public void user_closes_the_adchoices() {
+		driver.findElement(By.id("ensCall")).click();
+	}
 	@And("^User clicks on search button$")
 	public void user_clicks_on_search_button() {
 	  driver.findElement(By.xpath("//button[contains(text(),'Ask Us')]")).click();
 	      
 	}
+	
+	@And("^User waits for some time$")
+	public void user_waits_for_some_time() {
+		
+	   try {
+		   Thread.sleep(5000);
+	   }
+	   catch(Exception e) {
+		   e.printStackTrace();
+	   }
+		
+	}
+	
+	@Then("^User closes the browser$")
+	public void user_closes_the_browser() {
+	   driver.quit();
+	}
+	
 	
 
 }
