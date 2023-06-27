@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HomeSteps {
@@ -20,11 +21,18 @@ public class HomeSteps {
 		driver.manage().window().maximize();
 	}
 	
-	@Then("^User enters text in Search box$")
+	@When("^User enters text in Search box$")
 	public void user_enters_text_in_search_box() {
 		driver.findElement(By.xpath("//input[@name='question']")).sendKeys("auto insurance policy");
 		
 	}
+	
+	@When("^User enters the text (.+) in Search$")
+	public void user_enters_text_in_search(String searchtxt) {
+		driver.findElement(By.xpath("//input[@name='question']")).sendKeys(searchtxt);
+		
+	}
+	
 	@Then("^User closes the adchoices$")
 	public void user_closes_the_adchoices() {
 		driver.findElement(By.id("ensCall")).click();

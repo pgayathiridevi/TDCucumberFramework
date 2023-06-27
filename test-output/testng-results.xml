@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-26T20:06:19Z" name="Default suite" finished-at="2023-06-26T20:06:31Z" duration-ms="12461">
+  <suite started-at="2023-06-27T20:00:57Z" name="Default suite" finished-at="2023-06-27T20:01:20Z" duration-ms="22966">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-26T20:06:19Z" name="Default test" finished-at="2023-06-26T20:06:31Z" duration-ms="12461">
+    <test started-at="2023-06-27T20:00:57Z" name="Default test" finished-at="2023-06-27T20:01:20Z" duration-ms="22966">
       <class name="td.Runner.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:19Z" name="setUpClass" finished-at="2023-06-26T20:06:19Z" duration-ms="547" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T20:00:57Z" name="setUpClass" finished-at="2023-06-27T20:00:57Z" duration-ms="419" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@528c8c1]]>
+                <![CDATA[org.testng.TestRunner@632b305d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:19Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-26T20:06:30Z" duration-ms="10825" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T20:00:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T20:01:10Z" duration-ms="12504" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Checking search functionality in TD Home"]]>
+                <![CDATA["Checking search functionality with data"]]>
               </value>
             </param>
             <param index="1">
@@ -37,7 +37,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-26T20:06:30Z" name="tearDownClass" finished-at="2023-06-26T20:06:31Z" duration-ms="1078" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T20:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T20:01:19Z" duration-ms="8792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checking search functionality with data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TD Home Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T20:01:19Z" name="tearDownClass" finished-at="2023-06-27T20:01:20Z" duration-ms="1235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
