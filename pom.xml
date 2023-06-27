@@ -18,6 +18,11 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.9.0</version>
 		</dependency>
+		<!--<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.0.1-jre</version>
+		</dependency>-->
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -77,11 +82,13 @@
 			<version>5.2.3</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-		<!--<dependency>
-		    <groupId>net.masterthought</groupId>
-		    <artifactId>cucumber-reporting</artifactId>
-		    <version>5.7.0</version>
-		</dependency>-->
+		  <!-- Cucumber Reporting Plugin -->
+	    <!--<dependency>
+	        <groupId>net.masterthought</groupId>
+	        <artifactId>cucumber-reporting</artifactId>
+	        <version>5.6.0</version>
+	        <scope>test</scope>
+	    </dependency>-->
 
 	</dependencies>
 	<profiles>
@@ -244,32 +251,45 @@
 					<version>3.0.0</version>
 				</plugin>
 				
-				
-		        <!-- Cucumber HTML Reporting Plugin -->
-		        <!--<plugin>
-		            <groupId>com.github.mkolisnyk</groupId>
-		            <artifactId>cucumber-reports</artifactId>
-		            <version>5.4.0</version>
+				 <!-- Cucumber-JVM JSON formatter plugin -->
+		      <!--  <plugin>
+		            <groupId>io.cucumber</groupId>
+		            <artifactId>cucumber-jvm</artifactId>
+		            <version>7.3.0</version>
 		            <executions>
 		                <execution>
-		                    <id>generate-cucumber-reports</id>
+		                    <id>generate-json-report</id>
+		                    <phase>post-integration-test</phase>
+		                    <goals>
+		                        <goal>generate</goal>
+		                    </goals>
+		                    <configuration>
+		                        <format>json</format>
+		                        <outputDirectory>target/cucumber-reports</outputDirectory>
+		                    </configuration>
+		                </execution>
+		            </executions>
+		        </plugin>-->
+		        <!-- Maven Cucumber Reporting Plugin -->
+		        <!--<plugin>
+		            <groupId>net.masterthought</groupId>
+		            <artifactId>maven-cucumber-reporting</artifactId>
+		            <version>5.5.0</version>
+		            <executions>
+		                <execution>
+		                    <id>generate-reports</id>
 		                    <phase>verify</phase>
 		                    <goals>
 		                        <goal>generate</goal>
 		                    </goals>
 		                    <configuration>
-		                        <projectName>TDAutomationFramework</projectName>
+		                        <projectName>TDCucumberFramework</projectName>
 		                        <outputDirectory>target/cucumber-reports</outputDirectory>
-		                        <inputDirectory>target</inputDirectory>
-		                        <jsonFiles>
-		                            <param>target/cucumber.json</param>
-		                        </jsonFiles>
-		                        <parallelTesting>false</parallelTesting>
-		                        <checkBuildResult>false</checkBuildResult>
-		                    </configuration>
+		                        
 		                </execution>
 		            </executions>
-       			 </plugin>-->
+		        </plugin>-->
+        
 				
 			</plugins>
 		</pluginManagement>
