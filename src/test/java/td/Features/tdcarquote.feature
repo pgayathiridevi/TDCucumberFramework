@@ -1,4 +1,4 @@
-@tag
+@car
 Feature: Title of your feature
 
   @tag1

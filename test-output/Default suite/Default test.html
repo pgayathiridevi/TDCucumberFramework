@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 27 18:08:19 EDT 2023</td>
+<td>Started on:</td><td>Fri Jun 30 14:35:59 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28447 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23434 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,168 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking search functionality with data", "TD Home Search functionality"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b34e988bb2734719c767110eade5ba7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56011/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b34e988bb2734719c767110eade5ba7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+	at td.AbstractComponents.AbstractComponent.closeBrowser(AbstractComponent.java:39)
+	at td.PageObjects.HomePage.closetheBrowser(HomePage.java:38)
+	at td.StepDefinitions.HomePageStepsDefinition.user_closes_the_browser(HomePageStepsDefinition.java:50)
+	at ✽.User closes the browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace21063905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21063905'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b34e988bb2734719c767110eade5ba7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56011/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b34e988bb2734719c767110eade5ba7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+	at td.AbstractComponents.AbstractComponent.closeBrowser(AbstractComponent.java:39)
+	at td.PageObjects.HomePage.closetheBrowser(HomePage.java:38)
+	at td.StepDefinitions.HomePageStepsDefinition.user_closes_the_browser(HomePageStepsDefinition.java:50)
+	at ✽.User closes the browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:23)
+</pre></div></td>
+<td>8</td>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
+<tr>
+<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking search functionality with data", "TD Home Search functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d5b3aa8276ce58475b62a000a2ae064, findElement {using=xpath, value=//input[@name=&apos;question&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56079/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d5b3aa8276ce58475b62a000a2ae064
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+	at td.PageObjects.HomePage.enterSearchText(HomePage.java:26)
+	at td.StepDefinitions.HomePageStepsDefinition.user_enters_text_in_search(HomePageStepsDefinition.java:28)
+	at ✽.User enters the text What are my payment options with TD Insurance in Search(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace726893578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726893578'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d5b3aa8276ce58475b62a000a2ae064, findElement {using=xpath, value=//input[@name=&apos;question&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56079/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d5b3aa8276ce58475b62a000a2ae064
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+	at td.PageObjects.HomePage.enterSearchText(HomePage.java:26)
+	at td.StepDefinitions.HomePageStepsDefinition.user_enters_text_in_search(HomePageStepsDefinition.java:28)
+	at ✽.User enters the text What are my payment options with TD Insurance in Search(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:19)
+</pre></div></td>
+<td>2</td>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
+<tr>
+<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario", "Title of your feature"</td>
+<td><div><pre>java.lang.AssertionError: expected [TDBankClosed] but found [TDClose]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at td.StepDefinitions.CarQuoteSteps.open_a_web_browser(CarQuoteSteps.java:11)
+	at ✽.open a web browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdcarquote.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace476179877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace476179877'><pre>java.lang.AssertionError: expected [TDBankClosed] but found [TDClose]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at td.StepDefinitions.CarQuoteSteps.open_a_web_browser(CarQuoteSteps.java:11)
+	at ✽.open a web browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdcarquote.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,23 +239,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking search functionality in TD Home", "TD Home Search functionality"</td>
 <td></td>
-<td>9</td>
-<td>td.Runner.TestNGTestRunner@2b76ff4e</td></tr>
+<td>10</td>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
 <tr>
-<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking search functionality with data", "TD Home Search functionality"</td>
-<td></td>
-<td>8</td>
-<td>td.Runner.TestNGTestRunner@2b76ff4e</td></tr>
-<tr>
-<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking search functionality with data", "TD Home Search functionality"</td>
-<td></td>
-<td>8</td>
-<td>td.Runner.TestNGTestRunner@2b76ff4e</td></tr>
-<tr>
-<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario", "Title of your feature"</td>
+<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "sample 1", "Title of your feature"</td>
 <td></td>
 <td>0</td>
-<td>td.Runner.TestNGTestRunner@2b76ff4e</td></tr>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
+<tr>
+<td title='td.Runner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: td.Runner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "sample 2", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>td.Runner.TestNGTestRunner@2de56eb2</td></tr>
 </table><p>
 </body>
 </html>

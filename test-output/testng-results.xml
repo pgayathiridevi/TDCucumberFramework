@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-27T22:08:19Z" name="Default suite" finished-at="2023-06-27T22:08:47Z" duration-ms="28447">
+  <suite started-at="2023-06-30T18:35:59Z" name="Default suite" finished-at="2023-06-30T18:36:23Z" duration-ms="23434">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-27T22:08:19Z" name="Default test" finished-at="2023-06-27T22:08:47Z" duration-ms="28447">
+    <test started-at="2023-06-30T18:35:59Z" name="Default test" finished-at="2023-06-30T18:36:23Z" duration-ms="23434">
       <class name="td.Runner.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:19Z" name="setUpClass" finished-at="2023-06-27T22:08:19Z" duration-ms="441" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:35:59Z" name="setUpClass" finished-at="2023-06-30T18:36:00Z" duration-ms="481" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@67acfde9]]>
+                <![CDATA[org.testng.TestRunner@7418d76e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:19Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T22:08:29Z" duration-ms="9664" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:10Z" duration-ms="10580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:29Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T22:08:38Z" duration-ms="8609" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:19Z" duration-ms="8570" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +50,54 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b34e988bb2734719c767110eade5ba7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56011/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b34e988bb2734719c767110eade5ba7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b34e988bb2734719c767110eade5ba7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56011/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b34e988bb2734719c767110eade5ba7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+at td.AbstractComponents.AbstractComponent.closeBrowser(AbstractComponent.java:39)
+at td.PageObjects.HomePage.closetheBrowser(HomePage.java:38)
+at td.StepDefinitions.HomePageStepsDefinition.user_closes_the_browser(HomePageStepsDefinition.java:50)
+at ✽.User closes the browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:38Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T22:08:46Z" duration-ms="8696" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:19Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:21Z" duration-ms="2483" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,14 +110,57 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d5b3aa8276ce58475b62a000a2ae064, findElement {using=xpath, value=//input[@name='question']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56079/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d5b3aa8276ce58475b62a000a2ae064]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d5b3aa8276ce58475b62a000a2ae064, findElement {using=xpath, value=//input[@name='question']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\harih\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56079/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d5b3aa8276ce58475b62a000a2ae064
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy29.sendKeys(Unknown Source)
+at td.PageObjects.HomePage.enterSearchText(HomePage.java:26)
+at td.StepDefinitions.HomePageStepsDefinition.user_enters_text_in_search(HomePageStepsDefinition.java:28)
+at ✽.User enters the text What are my payment options with TD Insurance in Search(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdHome.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:46Z" name="tearDownClass" finished-at="2023-06-27T22:08:47Z" duration-ms="1016" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2b76ff4e]" started-at="2023-06-27T22:08:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-27T22:08:46Z" duration-ms="0" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:21Z" duration-ms="46" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,9 +173,62 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [TDBankClosed] but found [TDClose]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [TDBankClosed] but found [TDClose]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at td.StepDefinitions.CarQuoteSteps.open_a_web_browser(CarQuoteSteps.java:11)
+at ✽.open a web browser(file:///C:/Users/harih/eclipse-workspace/TDCucumberFramework/src/test/java/td/Features/tdcarquote.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:21Z" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["sample 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T18:36:21Z" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["sample 2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:td.Runner.TestNGTestRunner@2de56eb2]" started-at="2023-06-30T18:36:21Z" name="tearDownClass" finished-at="2023-06-30T18:36:23Z" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
       </class> <!-- td.Runner.TestNGTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
